@@ -1,0 +1,244 @@
+Receiving chunk from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Handling information request from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Handling information request from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Handling information request from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Handling information request from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Handling information request from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Handling information request from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Handling information request from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Handling information request from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Handling information request from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Receiving chunk from country C1
+Handling information request from country C1
+Sending final rankings to country C1
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Handling information request from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Handling information request from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Handling information request from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Handling information request from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Handling information request from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Handling information request from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Handling information request from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Handling information request from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Handling information request from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C2
+Handling information request from country C2
+Sending final rankings to country C2
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Handling information request from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Handling information request from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Handling information request from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Handling information request from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Handling information request from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Handling information request from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Handling information request from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Handling information request from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Handling information request from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C3
+Handling information request from country C3
+Sending final rankings to country C3
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Handling information request from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Handling information request from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Handling information request from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Handling information request from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Handling information request from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Handling information request from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Handling information request from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Handling information request from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Handling information request from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C4
+Handling information request from country C4
+Sending final rankings to country C4
