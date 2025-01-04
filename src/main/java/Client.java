@@ -40,6 +40,8 @@ public class Client {
                         client.sendInformationRequest();
 
                         // TODO: Maybe the results of the information requests can be received from the server in a separate thread in the client
+                   /*     String finalRanking = client.getFinalContestantsRanking();
+                        System.out.println("Country partial ranking: " + finalRanking);*/
                     }
                 }
             }

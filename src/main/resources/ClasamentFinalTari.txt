@@ -1,0 +1,4 @@
+Country:C1, Score:49939
+Country:C4, Score:47036
+Country:C3, Score:46453
+Country:C2, Score:43767

@@ -12,7 +12,7 @@ public class ListenerTask implements Runnable {
     private final LinkedList list;
     private String country = "";
 
-    public ListenerTask(ServerSocket serverSocket, Queue queue, List<Socket> clientsSockets, LinkedList list) {
+    public ListenerTask( ServerSocket serverSocket, Queue queue, List<Socket> clientsSockets, LinkedList list ) {
         this.serverSocket = serverSocket;
         this.queue = queue;
         this.clientsSockets = clientsSockets;
@@ -20,64 +20,75 @@ public class ListenerTask implements Runnable {
     }
 
     @Override
-    public void run() {
+    public void run( ) {
         Socket clientSocket;
 
         try {
-            clientSocket = serverSocket.accept();
-            clientsSockets.add(clientSocket);
+            clientSocket = serverSocket.accept( );
+            clientsSockets.add( clientSocket );
 
-            try(ObjectInputStream ois=new ObjectInputStream(clientSocket.getInputStream());
-            ObjectOutputStream oos=new ObjectOutputStream(clientSocket.getOutputStream())) {
-                int recvAction = ois.readInt();
-
-                while (recvAction != -1) {
+            try ( ObjectInputStream ois = new ObjectInputStream( clientSocket.getInputStream( ) );
+                  ObjectOutputStream oos = new ObjectOutputStream( clientSocket.getOutputStream( ) ) ) {
+                int recvAction = ois.readInt( );
+                long lastTimeCalculated = System.currentTimeMillis( );
+                while ( recvAction != -1 ) {
                     // Data chunk
-                    if(recvAction == 1){
-                        Object buffer = ois.readObject();
+                    if ( recvAction == 1 ) {
+                        Object buffer = ois.readObject( );
 
-                        if(buffer != null) {
-                            List<ContestEntry> list = (List<ContestEntry>) buffer;
-                            this.country = list.getFirst().country();
-                            System.out.println("Received buffer size: " + list.size());
-                            System.out.println("Received: " + list);
+                        if ( buffer != null ) {
+                            List<ContestEntry> list = ( List<ContestEntry> ) buffer;
+                            this.country = list.get( 0 ).country( );
+                            System.out.println( "Received buffer size: " + list.size( ) );
+                            System.out.println( "Received: " + list );
 
-                            for (ContestEntry c : list) {
-                                queue.enqueue(c.contestantID(), c.score(), c.country());
+                            for ( ContestEntry c : list ) {
+                                queue.enqueue( c.contestantID( ), c.score( ), c.country( ) );
                             }
                         }
 
-                        Logging.log("Receiving chunk from country " + this.country);
+                        Logging.log( "Receiving chunk from country " + this.country );
                     }
 
                     // Information request
-                    else if(recvAction == 2){
-                        Logging.log("Handling information request from country " + this.country);
+                    else if ( recvAction == 2 ) {
+                        Logging.log( "Handling information request from country " + this.country );
                         // TODO: Handle request
+                 /*       if ( System.currentTimeMillis( ) - lastTimeCalculated > 1 ) {
+                            Logging.log( "Calculating partial ranking " + this.country );
+                            list.printCountryClasament( Constants.PATH + "ClasamentPartialTari.txt" );
+                            lastTimeCalculated = System.currentTimeMillis( );
+                            Logging.log( "Finished Calculating partial ranking " + this.country );
+                        }
+                        byte[] content = Files.readAllBytes( Path.of( Constants.PATH + "ClasamentPartialTari.txt" ) );
+                        Logging.log( "Sending partial ranking " + this.country );
+                        oos.writeObject( content );
+                        Logging.log( "Sent partial ranking " + this.country );
+                        oos.flush( );*/
                     }
 
-                    recvAction = ois.readInt();
+                    recvAction = ois.readInt( );
                 }
 
                 // Sending the final rankings
                 // TODO: add final ranking by countries
-                Logging.log("Sending final rankings to country " + this.country);
+                Logging.log( "Sending final rankings to country " + this.country );
 
-                list.sort();
-                list.printListToFile(Constants.PATH + "ClasamentFinalConcurenti.txt");
+                list.sort( );
+                list.printListToFile( Constants.PATH + "ClasamentFinalConcurenti.txt" );
+                list.printCountryClasament( Constants.PATH + "ClasamentFinalTari.txt" );
 
-                byte[] content = Files.readAllBytes(Path.of(Constants.PATH + "ClasamentFinalConcurenti.txt"));
-                oos.writeObject(content);
-                oos.flush();
-
-            } catch (Exception ex) {
-                System.out.println(ex.getMessage());
+                byte[] content = Files.readAllBytes( Path.of( Constants.PATH + "ClasamentFinalConcurenti.txt" ) );
+                oos.writeObject( content );
+                oos.flush( );
+            } catch ( Exception ex ) {
+                System.out.println( ex.getMessage( ) );
             }
 
             // Poison pill
-            queue.enqueue(-1, -1, "");
-        } catch (Exception e) {
-            e.printStackTrace();
+            queue.enqueue( -1, -1, "" );
+        } catch ( Exception e ) {
+            e.printStackTrace( );
         }
     }
 }
