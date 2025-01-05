@@ -7,6 +7,7 @@ import java.util.List;
 public class ClientSocket {
     private Socket clientSocket;
     private ObjectOutputStream oos;
+    private ObjectInputStream ois;
 
     public void startConnection( String ip, int port ) throws IOException {
         clientSocket = new Socket( ip, port );
@@ -44,19 +45,34 @@ public class ClientSocket {
         oos.close( );
         clientSocket.close( );
     }
+
+    public void printPartialCountryRanking( ) throws IOException {
+        try {
+            if ( ois == null ) {
+                ois = new ObjectInputStream( clientSocket.getInputStream( ) );
+            }
+            Object buffer = ois.readObject( );
+            System.out.println( "bufferul: " + buffer );
+            if ( buffer != null ) {
+                List<CountryScore> countryRanking = ( List<CountryScore> ) buffer;
+                System.out.println( "Country partial ranking" );
+                countryRanking.forEach( System.out::println );
+            }
+        } catch ( ClassNotFoundException e ) {
+            System.out.println( e.getMessage( ) );
+        }
+    }
+
     public String getFinalContestantsRanking( ) throws IOException {
         try {
-            ObjectInputStream ois = new ObjectInputStream( clientSocket.getInputStream( ) );
             byte[] ranking = ( byte[] ) ois.readObject( );
             String rankingString = new String( ranking, StandardCharsets.UTF_8 );
 
             System.out.println( rankingString );
-            ois.close();
             return rankingString;
         } catch ( ClassNotFoundException e ) {
             System.out.println( e.getMessage( ) );
         }
-
         return "";
     }
 }

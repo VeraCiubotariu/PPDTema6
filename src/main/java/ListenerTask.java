@@ -4,6 +4,9 @@ import java.net.Socket;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 public class ListenerTask implements Runnable {
     private final ServerSocket serverSocket;
@@ -11,6 +14,7 @@ public class ListenerTask implements Runnable {
     private final List<Socket> clientsSockets;
     private final LinkedList list;
     private String country = "";
+    private final ExecutorService executor = Executors.newSingleThreadExecutor( );
 
     public ListenerTask( ServerSocket serverSocket, Queue queue, List<Socket> clientsSockets, LinkedList list ) {
         this.serverSocket = serverSocket;
@@ -30,7 +34,6 @@ public class ListenerTask implements Runnable {
             try ( ObjectInputStream ois = new ObjectInputStream( clientSocket.getInputStream( ) );
                   ObjectOutputStream oos = new ObjectOutputStream( clientSocket.getOutputStream( ) ) ) {
                 int recvAction = ois.readInt( );
-                long lastTimeCalculated = System.currentTimeMillis( );
                 while ( recvAction != -1 ) {
                     // Data chunk
                     if ( recvAction == 1 ) {
@@ -54,17 +57,12 @@ public class ListenerTask implements Runnable {
                     else if ( recvAction == 2 ) {
                         Logging.log( "Handling information request from country " + this.country );
                         // TODO: Handle request
-                 /*       if ( System.currentTimeMillis( ) - lastTimeCalculated > 1 ) {
-                            Logging.log( "Calculating partial ranking " + this.country );
-                            list.printCountryClasament( Constants.PATH + "ClasamentPartialTari.txt" );
-                            lastTimeCalculated = System.currentTimeMillis( );
-                            Logging.log( "Finished Calculating partial ranking " + this.country );
-                        }
-                        byte[] content = Files.readAllBytes( Path.of( Constants.PATH + "ClasamentPartialTari.txt" ) );
-                        Logging.log( "Sending partial ranking " + this.country );
-                        oos.writeObject( content );
-                        Logging.log( "Sent partial ranking " + this.country );
-                        oos.flush( );*/
+                        Future<List<CountryScore>> future = executor.submit( ( ) -> {
+                            Logging.log( "Recalculating country ranking..." );
+                            return list.getCountryRanking( );
+                        } );
+                        oos.writeObject( future.get( ) );
+                        oos.flush( );
                     }
 
                     recvAction = ois.readInt( );
@@ -77,7 +75,7 @@ public class ListenerTask implements Runnable {
                 list.sort( );
                 list.printListToFile( Constants.PATH + "ClasamentFinalConcurenti.txt" );
                 list.printCountryClasament( Constants.PATH + "ClasamentFinalTari.txt" );
-
+                executor.shutdown( );
                 byte[] content = Files.readAllBytes( Path.of( Constants.PATH + "ClasamentFinalConcurenti.txt" ) );
                 oos.writeObject( content );
                 oos.flush( );

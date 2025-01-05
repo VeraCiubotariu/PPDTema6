@@ -8,6 +8,9 @@ import java.util.concurrent.locks.ReentrantLock;
 public class LinkedList {
     private Node head;
     private final Lock lock = new ReentrantLock( );
+    private long lastTimeCalculated = 0;
+
+    private List<CountryScore> countryRanking;
 
     public LinkedList( ) {
         head = null;
@@ -179,7 +182,7 @@ public class LinkedList {
 
     public void printCountryClasament( String filePath ) {
         try ( BufferedWriter writer = new BufferedWriter( new FileWriter( filePath ) ) ) {
-            List<CountryScore> countryScoreList = getCountryClasament( );
+            List<CountryScore> countryScoreList = getCountryRanking( );
             for ( CountryScore countryScore : countryScoreList ) {
                 writer.write( String.valueOf( countryScore ) );
                 writer.newLine( );
@@ -189,20 +192,23 @@ public class LinkedList {
         }
     }
 
-    private final List<CountryScore> getCountryClasament( ) {
-        Map<String, CountryScore> countryScoreMap = new HashMap<>( );
-        var current = head;
-        lock.lock();
-        while ( current != null ) {
-            var country = current.getCountryName( );
-            countryScoreMap.computeIfAbsent( country, k -> new CountryScore( country, 0 ) )
-                    .addScore( current.getScore( ) );
-            current = current.getNext( );
+    public final List<CountryScore> getCountryRanking( ) {
+        if ( System.currentTimeMillis( ) - lastTimeCalculated > 1 ) {
+            Map<String, CountryScore> countryScoreMap = new HashMap<>( );
+            var current = head;
+            lock.lock( );
+            while ( current != null ) {
+                var country = current.getCountryName( );
+                countryScoreMap.computeIfAbsent( country, k -> new CountryScore( country, 0 ) )
+                        .addScore( current.getScore( ) );
+                current = current.getNext( );
+            }
+            lock.unlock( );
+            countryRanking = countryScoreMap.values( )
+                    .stream( )
+                    .sorted( Comparator.comparing( CountryScore::getScore ).reversed( ) )
+                    .toList( );
         }
-        lock.unlock();
-        return countryScoreMap.values( )
-                .stream( )
-                .sorted( Comparator.comparing( CountryScore::getScore ).reversed( ) )
-                .toList( );
+        return countryRanking;
     }
 }
