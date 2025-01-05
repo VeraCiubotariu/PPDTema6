@@ -44,7 +44,6 @@ public class ListenerTask implements Runnable {
                             this.country = list.get( 0 ).country( );
                             System.out.println( "Received buffer size: " + list.size( ) );
                             System.out.println( "Received: " + list );
-
                             for ( ContestEntry c : list ) {
                                 queue.enqueue( c.contestantID( ), c.score( ), c.country( ) );
                             }
@@ -56,7 +55,6 @@ public class ListenerTask implements Runnable {
                     // Information request
                     else if ( recvAction == 2 ) {
                         Logging.log( "Handling information request from country " + this.country );
-                        // TODO: Handle request
                         Future<List<CountryScore>> future = executor.submit( ( ) -> {
                             Logging.log( "Recalculating country ranking..." );
                             return list.getCountryRanking( );
@@ -69,15 +67,17 @@ public class ListenerTask implements Runnable {
                 }
 
                 // Sending the final rankings
-                // TODO: add final ranking by countries
                 Logging.log( "Sending final rankings to country " + this.country );
 
                 list.sort( );
                 list.printListToFile( Constants.PATH + "ClasamentFinalConcurenti.txt" );
                 list.printCountryClasament( Constants.PATH + "ClasamentFinalTari.txt" );
                 executor.shutdown( );
-                byte[] content = Files.readAllBytes( Path.of( Constants.PATH + "ClasamentFinalConcurenti.txt" ) );
-                oos.writeObject( content );
+                byte[] rankingParticipants = Files.readAllBytes( Path.of( Constants.PATH + "ClasamentFinalConcurenti.txt" ) );
+                byte[] rankingCountries = Files.readAllBytes( Path.of( Constants.PATH + "ClasamentFinalTari.txt" ) );
+                oos.writeObject( rankingParticipants );
+                oos.flush( );
+                oos.writeObject( rankingCountries );
                 oos.flush( );
             } catch ( Exception ex ) {
                 System.out.println( ex.getMessage( ) );

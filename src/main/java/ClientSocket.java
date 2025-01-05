@@ -1,7 +1,6 @@
 import java.io.*;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
-import java.util.Arrays;
 import java.util.List;
 
 public class ClientSocket {
@@ -36,7 +35,7 @@ public class ClientSocket {
         Logging.log( "sent request for partial ranking" );
     }
 
-    public void markEndOfStream( ) throws IOException {
+    public void sendRequestForConcurentRanking( ) throws IOException {
         oos.writeInt( -1 );
         oos.flush( );
     }
@@ -46,7 +45,7 @@ public class ClientSocket {
         clientSocket.close( );
     }
 
-    public void printPartialCountryRanking( ) throws IOException {
+    public void printCountryRanking( ) throws IOException {
         try {
             if ( ois == null ) {
                 ois = new ObjectInputStream( clientSocket.getInputStream( ) );
@@ -55,7 +54,7 @@ public class ClientSocket {
             System.out.println( "bufferul: " + buffer );
             if ( buffer != null ) {
                 List<CountryScore> countryRanking = ( List<CountryScore> ) buffer;
-                System.out.println( "Country partial ranking" );
+                System.out.println( "Country ranking:" );
                 countryRanking.forEach( System.out::println );
             }
         } catch ( ClassNotFoundException e ) {
@@ -63,16 +62,18 @@ public class ClientSocket {
         }
     }
 
-    public String getFinalContestantsRanking( ) throws IOException {
+    public void getFinalContestantsRanking( ) throws IOException {
         try {
-            byte[] ranking = ( byte[] ) ois.readObject( );
-            String rankingString = new String( ranking, StandardCharsets.UTF_8 );
-
-            System.out.println( rankingString );
-            return rankingString;
+            byte[] rankingParticipants = ( byte[] ) ois.readObject( );
+            byte[] rankingCountries = ( byte[] ) ois.readObject( );
+            String rankingCountriesString = new String( rankingCountries, StandardCharsets.UTF_8 );
+            String rankingParticipantsString = new String( rankingParticipants, StandardCharsets.UTF_8 );
+            System.out.println( "Paticipants: " );
+            System.out.println( rankingParticipantsString );
+            System.out.println( "Countries" );
+            System.out.println( rankingCountriesString );
         } catch ( ClassNotFoundException e ) {
             System.out.println( e.getMessage( ) );
         }
-        return "";
     }
 }

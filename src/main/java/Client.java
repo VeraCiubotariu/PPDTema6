@@ -1,6 +1,5 @@
 import java.io.File;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Client {
@@ -38,18 +37,14 @@ public class Client {
 
                         // Information request
                         client.sendInformationRequest( );
-
-                        // TODO: Maybe the results of the information requests can be received from the server in a separate thread in the client
-                        client.printPartialCountryRanking( );
+                        client.printCountryRanking( );
                     }
                 }
             }
 
             System.out.println( "Ending stream" );
-            client.markEndOfStream( );
-
-            String finalRanking = client.getFinalContestantsRanking( );
-            System.out.println( "Final ranking: " + finalRanking );
+            client.sendRequestForConcurentRanking( );
+            client.getFinalContestantsRanking( );
         } catch ( Exception e ) {
             System.out.println( e.getMessage( ) );
         }
