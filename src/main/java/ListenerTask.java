@@ -4,9 +4,11 @@ import java.net.Socket;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
+import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class ListenerTask implements Runnable {
     private final ServerSocket serverSocket;
@@ -26,11 +28,9 @@ public class ListenerTask implements Runnable {
     @Override
     public void run( ) {
         Socket clientSocket;
-
         try {
             clientSocket = serverSocket.accept( );
             clientsSockets.add( clientSocket );
-
             try ( ObjectInputStream ois = new ObjectInputStream( clientSocket.getInputStream( ) );
                   ObjectOutputStream oos = new ObjectOutputStream( clientSocket.getOutputStream( ) ) ) {
                 int recvAction = ois.readInt( );

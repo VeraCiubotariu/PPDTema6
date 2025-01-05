@@ -51,7 +51,6 @@ public class ClientSocket {
                 ois = new ObjectInputStream( clientSocket.getInputStream( ) );
             }
             Object buffer = ois.readObject( );
-            System.out.println( "bufferul: " + buffer );
             if ( buffer != null ) {
                 List<CountryScore> countryRanking = ( List<CountryScore> ) buffer;
                 System.out.println( "Country ranking:" );

@@ -126,6 +126,7 @@ public class LinkedList {
     }
 
     public void sort( ) {
+        lock.lock();
         if ( head == null || head.getNext( ) == null ) {
             return;
         }
@@ -156,6 +157,7 @@ public class LinkedList {
                 }
             }
         } while ( swapped );
+        lock.unlock();
     }
 
 
@@ -193,7 +195,7 @@ public class LinkedList {
     }
 
     public final List<CountryScore> getCountryRanking( ) {
-        if ( System.currentTimeMillis( ) - lastTimeCalculated > 1 ) {
+        if ( System.currentTimeMillis( ) - lastTimeCalculated > Constants.DELTA_T ) {
             Map<String, CountryScore> countryScoreMap = new HashMap<>( );
             var current = head;
             lock.lock( );

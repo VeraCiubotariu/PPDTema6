@@ -1,324 +1,324 @@
+Receiving chunk from country C3
+Receiving chunk from country C4
 Receiving chunk from country C1
+Receiving chunk from country C2
+Receiving chunk from country C2
 Receiving chunk from country C1
+Receiving chunk from country C3
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C3
 Receiving chunk from country C1
+Receiving chunk from country C2
+Receiving chunk from country C2
 Receiving chunk from country C1
-Receiving chunk from country C1
-Handling information request from country C1
-sent request for partial ranking
-Recalculating country ranking...
-Receiving chunk from country C1
-Receiving chunk from country C1
-Receiving chunk from country C1
-Receiving chunk from country C1
-Receiving chunk from country C1
-Handling information request from country C1
-sent request for partial ranking
-Recalculating country ranking...
-Receiving chunk from country C1
-Receiving chunk from country C1
-Receiving chunk from country C1
-Receiving chunk from country C1
-Receiving chunk from country C1
-sent request for partial ranking
-Handling information request from country C1
-Recalculating country ranking...
-Receiving chunk from country C1
-Receiving chunk from country C1
-Receiving chunk from country C1
-Receiving chunk from country C1
-Receiving chunk from country C1
-sent request for partial ranking
-Handling information request from country C1
-Recalculating country ranking...
-Receiving chunk from country C1
-Receiving chunk from country C1
-Receiving chunk from country C1
-Receiving chunk from country C1
-Receiving chunk from country C1
-sent request for partial ranking
-Handling information request from country C1
-Recalculating country ranking...
-Receiving chunk from country C1
-Receiving chunk from country C1
-Receiving chunk from country C1
-Receiving chunk from country C1
+Receiving chunk from country C4
+Receiving chunk from country C3
+Receiving chunk from country C2
+Receiving chunk from country C3
+Receiving chunk from country C4
 Receiving chunk from country C1
 Handling information request from country C1
+Handling information request from country C3
+Handling information request from country C4
+Handling information request from country C2
+sent request for partial ranking
+sent request for partial ranking
+sent request for partial ranking
 sent request for partial ranking
 Recalculating country ranking...
+Recalculating country ranking...
+Recalculating country ranking...
+Recalculating country ranking...
 Receiving chunk from country C1
+Receiving chunk from country C3
+Receiving chunk from country C2
+Receiving chunk from country C4
+Receiving chunk from country C3
+Receiving chunk from country C4
 Receiving chunk from country C1
+Receiving chunk from country C2
+Receiving chunk from country C4
+Receiving chunk from country C3
+Receiving chunk from country C2
 Receiving chunk from country C1
+Receiving chunk from country C4
+Receiving chunk from country C3
 Receiving chunk from country C1
+Receiving chunk from country C2
+Receiving chunk from country C4
+Receiving chunk from country C3
 Receiving chunk from country C1
+Receiving chunk from country C2
+sent request for partial ranking
+sent request for partial ranking
+sent request for partial ranking
+Handling information request from country C3
+Handling information request from country C2
+sent request for partial ranking
 Handling information request from country C1
-sent request for partial ranking
+Handling information request from country C4
 Recalculating country ranking...
+Recalculating country ranking...
+Recalculating country ranking...
+Recalculating country ranking...
+Receiving chunk from country C2
+Receiving chunk from country C4
+Receiving chunk from country C3
 Receiving chunk from country C1
+Receiving chunk from country C3
+Receiving chunk from country C2
 Receiving chunk from country C1
+Receiving chunk from country C4
 Receiving chunk from country C1
+Receiving chunk from country C4
+Receiving chunk from country C2
+Receiving chunk from country C3
 Receiving chunk from country C1
+Receiving chunk from country C3
+Receiving chunk from country C2
+Receiving chunk from country C4
+Receiving chunk from country C3
+Receiving chunk from country C2
+Receiving chunk from country C4
+Receiving chunk from country C1
+sent request for partial ranking
+sent request for partial ranking
+sent request for partial ranking
+sent request for partial ranking
+Handling information request from country C4
+Handling information request from country C2
+Handling information request from country C3
+Handling information request from country C1
+Recalculating country ranking...
+Recalculating country ranking...
+Recalculating country ranking...
+Recalculating country ranking...
+Receiving chunk from country C3
+Receiving chunk from country C1
+Receiving chunk from country C4
+Receiving chunk from country C2
+Receiving chunk from country C2
+Receiving chunk from country C1
+Receiving chunk from country C3
+Receiving chunk from country C4
+Receiving chunk from country C2
+Receiving chunk from country C3
+Receiving chunk from country C1
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C3
+Receiving chunk from country C2
+Receiving chunk from country C1
+Receiving chunk from country C3
+Receiving chunk from country C4
+Receiving chunk from country C2
 Receiving chunk from country C1
 sent request for partial ranking
 Handling information request from country C1
-Recalculating country ranking...
-Receiving chunk from country C1
-Receiving chunk from country C1
-Receiving chunk from country C1
-Receiving chunk from country C1
-Receiving chunk from country C1
+Handling information request from country C3
+Handling information request from country C4
 sent request for partial ranking
+Handling information request from country C2
+sent request for partial ranking
+sent request for partial ranking
+Recalculating country ranking...
+Recalculating country ranking...
+Recalculating country ranking...
+Recalculating country ranking...
+Receiving chunk from country C2
+Receiving chunk from country C4
+Receiving chunk from country C3
+Receiving chunk from country C1
+Receiving chunk from country C2
+Receiving chunk from country C3
+Receiving chunk from country C1
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C1
+Receiving chunk from country C2
+Receiving chunk from country C3
+Receiving chunk from country C3
+Receiving chunk from country C2
+Receiving chunk from country C4
+Receiving chunk from country C1
+Receiving chunk from country C4
+Receiving chunk from country C2
+Receiving chunk from country C1
+Receiving chunk from country C3
+sent request for partial ranking
+Handling information request from country C4
+Handling information request from country C1
+Handling information request from country C3
+sent request for partial ranking
+Handling information request from country C2
+sent request for partial ranking
+sent request for partial ranking
+Recalculating country ranking...
+Recalculating country ranking...
+Recalculating country ranking...
+Recalculating country ranking...
+Receiving chunk from country C2
+Receiving chunk from country C3
+Receiving chunk from country C1
+Receiving chunk from country C4
+Receiving chunk from country C2
+Receiving chunk from country C1
+Receiving chunk from country C3
+Receiving chunk from country C4
+Receiving chunk from country C4
+Receiving chunk from country C3
+Receiving chunk from country C1
+Receiving chunk from country C2
+Receiving chunk from country C1
+Receiving chunk from country C2
+Receiving chunk from country C4
+Receiving chunk from country C3
+Receiving chunk from country C2
+Receiving chunk from country C3
+Receiving chunk from country C1
+Receiving chunk from country C4
+sent request for partial ranking
+sent request for partial ranking
+sent request for partial ranking
+sent request for partial ranking
+Handling information request from country C4
+Handling information request from country C2
+Handling information request from country C3
 Handling information request from country C1
 Recalculating country ranking...
+Recalculating country ranking...
+Recalculating country ranking...
+Recalculating country ranking...
 Receiving chunk from country C1
+Receiving chunk from country C4
+Receiving chunk from country C2
+Receiving chunk from country C3
 Receiving chunk from country C1
+Receiving chunk from country C4
+Receiving chunk from country C3
+Receiving chunk from country C2
+Receiving chunk from country C4
+Receiving chunk from country C2
+Receiving chunk from country C3
 Receiving chunk from country C1
+Receiving chunk from country C2
+Receiving chunk from country C4
+Receiving chunk from country C3
 Receiving chunk from country C1
+Receiving chunk from country C4
 Receiving chunk from country C1
+Receiving chunk from country C2
+Receiving chunk from country C3
+sent request for partial ranking
+sent request for partial ranking
+sent request for partial ranking
+sent request for partial ranking
+Handling information request from country C3
+Handling information request from country C4
+Handling information request from country C2
 Handling information request from country C1
-sent request for partial ranking
 Recalculating country ranking...
-Sending final rankings to country C1
+Recalculating country ranking...
+Recalculating country ranking...
+Recalculating country ranking...
+Receiving chunk from country C4
 Receiving chunk from country C2
+Receiving chunk from country C1
+Receiving chunk from country C3
 Receiving chunk from country C2
+Receiving chunk from country C3
+Receiving chunk from country C4
+Receiving chunk from country C1
 Receiving chunk from country C2
+Receiving chunk from country C4
+Receiving chunk from country C3
+Receiving chunk from country C1
 Receiving chunk from country C2
+Receiving chunk from country C4
+Receiving chunk from country C1
+Receiving chunk from country C3
+Receiving chunk from country C1
+Receiving chunk from country C3
 Receiving chunk from country C2
+Receiving chunk from country C4
+sent request for partial ranking
+sent request for partial ranking
+sent request for partial ranking
 sent request for partial ranking
 Handling information request from country C2
+Handling information request from country C3
+Handling information request from country C4
+Handling information request from country C1
 Recalculating country ranking...
-Receiving chunk from country C2
-Receiving chunk from country C2
-Receiving chunk from country C2
-Receiving chunk from country C2
-Receiving chunk from country C2
-Handling information request from country C2
-sent request for partial ranking
 Recalculating country ranking...
-Receiving chunk from country C2
-Receiving chunk from country C2
-Receiving chunk from country C2
-Receiving chunk from country C2
-Receiving chunk from country C2
-sent request for partial ranking
-Handling information request from country C2
 Recalculating country ranking...
-Receiving chunk from country C2
-Receiving chunk from country C2
-Receiving chunk from country C2
-Receiving chunk from country C2
-Receiving chunk from country C2
-sent request for partial ranking
-Handling information request from country C2
 Recalculating country ranking...
+Receiving chunk from country C3
+Receiving chunk from country C1
+Receiving chunk from country C4
 Receiving chunk from country C2
 Receiving chunk from country C2
+Receiving chunk from country C3
+Receiving chunk from country C4
+Receiving chunk from country C1
+Receiving chunk from country C2
+Receiving chunk from country C4
+Receiving chunk from country C3
+Receiving chunk from country C1
+Receiving chunk from country C4
+Receiving chunk from country C3
+Receiving chunk from country C1
 Receiving chunk from country C2
 Receiving chunk from country C2
-Receiving chunk from country C2
+Receiving chunk from country C1
+Receiving chunk from country C4
+Receiving chunk from country C3
 sent request for partial ranking
-Handling information request from country C2
-Recalculating country ranking...
-Receiving chunk from country C2
-Receiving chunk from country C2
-Receiving chunk from country C2
-Receiving chunk from country C2
-Receiving chunk from country C2
 sent request for partial ranking
+Handling information request from country C1
 Handling information request from country C2
 Recalculating country ranking...
-Receiving chunk from country C2
-Receiving chunk from country C2
-Receiving chunk from country C2
-Receiving chunk from country C2
-Receiving chunk from country C2
-sent request for partial ranking
-Handling information request from country C2
 Recalculating country ranking...
 Receiving chunk from country C2
-Receiving chunk from country C2
-Receiving chunk from country C2
-Receiving chunk from country C2
-Receiving chunk from country C2
+Receiving chunk from country C1
 sent request for partial ranking
+sent request for partial ranking
+Handling information request from country C3
+Handling information request from country C4
+Recalculating country ranking...
+Recalculating country ranking...
+Receiving chunk from country C4
+Receiving chunk from country C3
+Receiving chunk from country C1
+Receiving chunk from country C2
+Receiving chunk from country C4
+Receiving chunk from country C3
+Receiving chunk from country C1
+Receiving chunk from country C2
+Receiving chunk from country C3
+Receiving chunk from country C4
+Receiving chunk from country C1
+Receiving chunk from country C2
+Receiving chunk from country C4
+Receiving chunk from country C3
+Receiving chunk from country C1
+Receiving chunk from country C2
+Receiving chunk from country C4
+Receiving chunk from country C3
+sent request for partial ranking
+sent request for partial ranking
+Handling information request from country C1
 Handling information request from country C2
 Recalculating country ranking...
-Receiving chunk from country C2
-Receiving chunk from country C2
-Receiving chunk from country C2
-Receiving chunk from country C2
-Receiving chunk from country C2
-sent request for partial ranking
-Handling information request from country C2
-Recalculating country ranking...
-Receiving chunk from country C2
-Receiving chunk from country C2
-Receiving chunk from country C2
-Receiving chunk from country C2
-Receiving chunk from country C2
-Handling information request from country C2
-sent request for partial ranking
 Recalculating country ranking...
 Sending final rankings to country C2
-Receiving chunk from country C3
-Receiving chunk from country C3
-Receiving chunk from country C3
-Receiving chunk from country C3
-Receiving chunk from country C3
-sent request for partial ranking
+Sending final rankings to country C1
 Handling information request from country C3
-Recalculating country ranking...
-Receiving chunk from country C3
-Receiving chunk from country C3
-Receiving chunk from country C3
-sent request for partial ranking
-Receiving chunk from country C3
-Receiving chunk from country C3
-Handling information request from country C3
-Recalculating country ranking...
-Receiving chunk from country C3
-Receiving chunk from country C3
-Receiving chunk from country C3
-Receiving chunk from country C3
-Receiving chunk from country C3
-Handling information request from country C3
-sent request for partial ranking
-Recalculating country ranking...
-Receiving chunk from country C3
-Receiving chunk from country C3
-Receiving chunk from country C3
-Receiving chunk from country C3
-Receiving chunk from country C3
-sent request for partial ranking
-Handling information request from country C3
-Recalculating country ranking...
-Receiving chunk from country C3
-Receiving chunk from country C3
-Receiving chunk from country C3
-Receiving chunk from country C3
-Receiving chunk from country C3
-sent request for partial ranking
-Handling information request from country C3
-Recalculating country ranking...
-Receiving chunk from country C3
-Receiving chunk from country C3
-Receiving chunk from country C3
-Receiving chunk from country C3
-Receiving chunk from country C3
-Handling information request from country C3
-sent request for partial ranking
-Recalculating country ranking...
-Receiving chunk from country C3
-Receiving chunk from country C3
-Receiving chunk from country C3
-Receiving chunk from country C3
-Receiving chunk from country C3
-sent request for partial ranking
-Handling information request from country C3
-Recalculating country ranking...
-Receiving chunk from country C3
-Receiving chunk from country C3
-Receiving chunk from country C3
-Receiving chunk from country C3
-Receiving chunk from country C3
-Handling information request from country C3
-sent request for partial ranking
-Recalculating country ranking...
-Receiving chunk from country C3
-Receiving chunk from country C3
-Receiving chunk from country C3
-Receiving chunk from country C3
-Receiving chunk from country C3
-sent request for partial ranking
-Handling information request from country C3
-Recalculating country ranking...
-Receiving chunk from country C3
-Receiving chunk from country C3
-Receiving chunk from country C3
-Receiving chunk from country C3
-Receiving chunk from country C3
-sent request for partial ranking
-Handling information request from country C3
-Recalculating country ranking...
-Sending final rankings to country C3
-Receiving chunk from country C4
-Receiving chunk from country C4
-Receiving chunk from country C4
-Receiving chunk from country C4
-Receiving chunk from country C4
 Handling information request from country C4
 sent request for partial ranking
-Recalculating country ranking...
-Receiving chunk from country C4
-Receiving chunk from country C4
-Receiving chunk from country C4
-Receiving chunk from country C4
-Receiving chunk from country C4
-sent request for partial ranking
-Handling information request from country C4
-Recalculating country ranking...
-Receiving chunk from country C4
-Receiving chunk from country C4
-Receiving chunk from country C4
-Receiving chunk from country C4
-Receiving chunk from country C4
-Handling information request from country C4
 sent request for partial ranking
 Recalculating country ranking...
-Receiving chunk from country C4
-Receiving chunk from country C4
-Receiving chunk from country C4
-Receiving chunk from country C4
-Receiving chunk from country C4
-Handling information request from country C4
-sent request for partial ranking
-Recalculating country ranking...
-Receiving chunk from country C4
-Receiving chunk from country C4
-Receiving chunk from country C4
-Receiving chunk from country C4
-Receiving chunk from country C4
-Handling information request from country C4
-sent request for partial ranking
-Recalculating country ranking...
-Receiving chunk from country C4
-Receiving chunk from country C4
-Receiving chunk from country C4
-Receiving chunk from country C4
-Receiving chunk from country C4
-sent request for partial ranking
-Handling information request from country C4
-Recalculating country ranking...
-Receiving chunk from country C4
-Receiving chunk from country C4
-Receiving chunk from country C4
-Receiving chunk from country C4
-Receiving chunk from country C4
-Handling information request from country C4
-sent request for partial ranking
-Recalculating country ranking...
-Receiving chunk from country C4
-Receiving chunk from country C4
-Receiving chunk from country C4
-Receiving chunk from country C4
-Receiving chunk from country C4
-Handling information request from country C4
-sent request for partial ranking
-Recalculating country ranking...
-Receiving chunk from country C4
-Receiving chunk from country C4
-Receiving chunk from country C4
-Receiving chunk from country C4
-Receiving chunk from country C4
-Handling information request from country C4
-sent request for partial ranking
-Recalculating country ranking...
-Receiving chunk from country C4
-Receiving chunk from country C4
-Receiving chunk from country C4
-Receiving chunk from country C4
-Receiving chunk from country C4
-sent request for partial ranking
-Handling information request from country C4
 Recalculating country ranking...
 Sending final rankings to country C4
+Sending final rankings to country C3
