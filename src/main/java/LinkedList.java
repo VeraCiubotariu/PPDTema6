@@ -126,7 +126,7 @@ public class LinkedList {
     }
 
     public void sort( ) {
-        lock.lock();
+        lock.lock( );
         if ( head == null || head.getNext( ) == null ) {
             return;
         }
@@ -157,7 +157,7 @@ public class LinkedList {
                 }
             }
         } while ( swapped );
-        lock.unlock();
+        lock.unlock( );
     }
 
 
@@ -210,6 +210,7 @@ public class LinkedList {
                     .stream( )
                     .sorted( Comparator.comparing( CountryScore::getScore ).reversed( ) )
                     .toList( );
+            lastTimeCalculated = System.currentTimeMillis( );
         }
         return countryRanking;
     }

@@ -10,7 +10,6 @@ public class ClientSocket {
 
     public void startConnection( String ip, int port ) throws IOException {
         clientSocket = new Socket( ip, port );
-
         try {
             oos = new ObjectOutputStream( clientSocket.getOutputStream( ) );
         } catch ( IOException e ) {
